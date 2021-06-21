@@ -35,44 +35,80 @@ local nTalentBuildList = J.Skill.GetTalentBuild( tTalentTreeList )
 local tOutFitList = {}
 
 tOutFitList['outfit_carry'] = {
-
-	"item_sven_outfit",
-	--"item_bracer",
-	"item_blade_mail",
+	"item_tango",
+	"item_flask",
+	"item_branches",
+	"item_branches",
+	"item_quelling_blade",
+	"item_magic_stick",
+	"item_boots",
+	"item_magic_wand",
+	"item_infused_raindrop",
+	"item_vanguard",
+	"item_blink",
+	"item_manta",
 	"item_black_king_bar",
 	"item_aghanims_shard",
-	"item_blink",
-	"item_ultimate_scepter",
 	"item_travel_boots",
-	"item_overwhelming_blink",	
+	"item_assault",
 	"item_abyssal_blade",
-	"item_ultimate_scepter_2",
-	"item_heart",
-	"item_moon_shard",
+	"item_overwhelming_blink",	
 	"item_travel_boots_2",
-
+	"item_ultimate_scepter",
+	"item_ultimate_scepter_2",
+	"item_moon_shard",
 }
 
 tOutFitList['outfit_mid'] = tOutFitList['outfit_carry']
 
-tOutFitList['outfit_priest'] = tOutFitList['outfit_carry']
+tOutFitList['outfit_priest'] = {
+	"item_tango",
+	"item_tango",
+	"item_clarity",
+	"item_circlet",
+	"item_branches",
+	"item_magic_stick",
+	"item_bracer",
+	"item_boots",
+	"item_magic_wand",
+	"item_buckler",
+	"item_blink",
+	"item_vanguard",
+	"item_crimson_guard",
+	"item_heavens_halberd",
+	"item_vladmir",
+	"item_aghanims_shard",
+	"item_lotus_orb",
+	"item_travel_boots",
+	"item_travel_boots_2",
+	"item_ultimate_scepter_2",
+	"item_moon_shard",
+}
 
-tOutFitList['outfit_mage'] = tOutFitList['outfit_carry']
+tOutFitList['outfit_mage'] = tOutFitList['outfit_priest']
 
 tOutFitList['outfit_tank'] = {
-
-	"item_tank_outfit",
+	"item_tango",
+	"item_tango",
+	"item_clarity",
+	"item_circlet",
+	"item_branches",
+	"item_magic_stick",
+	"item_boots",
+	"item_bracer",
+	"item_magic_wand",
+	"item_buckler",
+	"item_blink",
+	"item_vanguard",
+	"item_manta",
 	"item_crimson_guard",
 	"item_aghanims_shard",
-	"item_heavens_halberd",
 	"item_lotus_orb",
 	"item_travel_boots",
 	"item_assault",
-	"item_ultimate_scepter_2",
-	"item_heart",
-	"item_moon_shard",
 	"item_travel_boots_2",
-
+	"item_ultimate_scepter_2",
+	"item_moon_shard",
 }
 
 X['sBuyList'] = tOutFitList[sOutfitType]
