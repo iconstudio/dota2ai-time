@@ -35,47 +35,59 @@ local nTalentBuildList = J.Skill.GetTalentBuild( tTalentTreeList )
 local tOutFitList = {}
 
 tOutFitList['outfit_carry'] = {
-
-	"item_bristleback_outfit",
+	"item_tango",
+	"item_flask",
+	"item_ring_of_protection",
+	"item_quelling_blade",
+	"item_magic_stick",
+	"item_boots",
 	"item_soul_ring",
-	"item_blade_mail",
-	"item_armlet",
-	"item_aghanims_shard",
-	"item_heavens_halberd",
+	"item_bracer",
+	"item_power_treads_str",
+	"item_blink",
 	"item_black_king_bar",
-	"item_satanic",
+	"item_ultimate_scepter",
+	"item_aghanims_shard",
+	"item_assault",
 	"item_travel_boots",
---	"item_heart",
-	"item_abyssal_blade",
+	"item_monkey_king_bar",
 	"item_moon_shard",
+	"item_overwhelming_blink",
 	"item_travel_boots_2",
 	"item_ultimate_scepter_2",
-
+	"item_skadi",
 }
 
 tOutFitList['outfit_mid'] = tOutFitList['outfit_carry']
 
-tOutFitList['outfit_priest'] = tOutFitList['outfit_carry']
-
-tOutFitList['outfit_mage'] = tOutFitList['outfit_carry']
-
-tOutFitList['outfit_tank'] = {
-
-	"item_dragon_knight_outfit",
-	"item_crimson_guard",
-	"item_armlet",
+tOutFitList['outfit_priest'] = {
+	"item_tango",
+	"item_flask",
+	"item_ring_of_protection",
+	"item_branches",
+	"item_branches",
+	"item_soul_ring",
+	"item_magic_stick",
+	"item_bracer",
+	"item_phase_boots",
+	"item_magic_wand",
+	"item_blink",
+	"item_ultimate_scepter",
+	"item_black_king_bar",
 	"item_aghanims_shard",
 	"item_heavens_halberd",
-	"item_travel_boots",
 	"item_assault",
-	"item_heart",
-	"item_moon_shard",
+	"item_travel_boots",
+	"item_overwhelming_blink",
 	"item_travel_boots_2",
 	"item_ultimate_scepter_2",
-	"item_black_king_bar",
-
-
+	"item_nullifier",
+	"item_moon_shard",
 }
+
+tOutFitList['outfit_mage'] = tOutFitList['outfit_priest']
+
+tOutFitList['outfit_tank'] = tOutFitList['outfit_carry']
 
 X['sBuyList'] = tOutFitList[sOutfitType]
 
