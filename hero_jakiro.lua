@@ -34,8 +34,13 @@ local nTalentBuildList = J.Skill.GetTalentBuild( tTalentTreeList )
 local tOutFitList = {}
 
 tOutFitList['outfit_carry'] = {
-
-	"item_mage_outfit",
+	"item_tango",
+	"item_tango",
+	"item_enchanted_mango",
+	"item_enchanted_mango",
+	"item_clarity",
+	"item_clarity",
+	"item_null_talisman",
 	"item_glimmer_cape",
 	"item_aghanims_shard",
 	"item_force_staff",
