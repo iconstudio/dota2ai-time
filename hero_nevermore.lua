@@ -35,44 +35,62 @@ local nTalentBuildList = J.Skill.GetTalentBuild( tTalentTreeList )
 local tOutFitList = {}
 
 tOutFitList['outfit_carry'] = {
-
-	"item_ranged_carry_outfit",
-	"item_point_booster",
+	"item_tango",
+	"item_tango",
+	"item_enchanted_mango",
+	"item_enchanted_mango",
+	"item_circlet",
+	"item_branches",
+	"item_branches",
+	"item_wraith_band",
+	"item_magic_stick",
+	"item_wraith_band",
+	"item_boots",
+	"item_magic_wand",
+	"item_power_treads_agi",
+	"item_dragon_lance",
+	"item_blink",
 	"item_black_king_bar",
 	"item_aghanims_shard",
 	"item_ultimate_scepter",
-	"item_orchid",
+	"item_butterfly", 
 	"item_travel_boots",
-	"item_bloodthorn",
-	"item_sheepstick", 
-	"item_butterfly",
-	"item_moon_shard",
-	"item_travel_boots_2",
-	"item_ultimate_orb",
-	"item_ultimate_scepter_2",
 	"item_sphere",
-
+	"item_ultimate_scepter_2",
+	"item_skadi",
+	"item_arcane_blink",
+	"item_travel_boots_2",
+	"item_moon_shard",
 }
 
 tOutFitList['outfit_mid'] = {
-
-	"item_mid_outfit",
-	"item_point_booster",
+	"item_tango",
+	"item_tango",
+	"item_enchanted_mango",
+	"item_clarity",
+	"item_circlet",
+	"item_branches",
+	"item_branches",
+	"item_wraith_band",
+	"item_magic_stick",
+	"item_bottle",
+	"item_boots",
+	"item_magic_wand",
+	"item_power_treads_agi",
+	"item_dragon_lance",
+	"item_cyclone",
 	"item_black_king_bar",
+	"item_butterfly", 
 	"item_aghanims_shard",
-	"item_ultimate_scepter",
-	"item_orchid",
+	"item_skadi",
 	"item_travel_boots",
-	"item_bloodthorn",
-	"item_sheepstick",
-	"item_butterfly",
-	"item_moon_shard",
-	"item_travel_boots_2",
-	"item_ultimate_orb",
-	"item_ultimate_scepter_2",
 	"item_sphere",
-
-
+	"item_ultimate_scepter",
+	"item_ultimate_scepter_2",
+	"item_sheepstick",
+	"item_arcane_blink",
+	"item_travel_boots_2",
+	"item_moon_shard",
 }
 
 tOutFitList['outfit_priest'] = tOutFitList['outfit_carry']
@@ -84,12 +102,20 @@ tOutFitList['outfit_tank'] = tOutFitList['outfit_carry']
 X['sBuyList'] = tOutFitList[sOutfitType]
 
 X['sSellList'] = {
-
 	"item_ultimate_scepter",
-	"item_urn_of_shadows",
+	"item_wraith_band",
+
+	"item_butterfly",
+	"item_wraith_band",
+
+	"item_black_king_bar",
+	"item_magic_wand",
 
 	"item_sheepstick",
-	"item_magic_wand",
+	"item_cyclone",
+
+	"item_skadi",
+	"item_dragon_lance",
 }
 
 if J.Role.IsPvNMode() or J.Role.IsAllShadow() then X['sBuyList'], X['sSellList'] = { 'PvN_mid' }, {} end
