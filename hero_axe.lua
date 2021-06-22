@@ -48,9 +48,9 @@ tOutFitList['outfit_carry'] = {
 	"item_vanguard",
 	"item_blink",
 	"item_manta",
-	"item_aghanims_shard",
 	"item_black_king_bar",
 	"item_travel_boots",
+	"item_aghanims_shard",
 	"item_assault",
 	"item_abyssal_blade",
 	"item_overwhelming_blink",	
@@ -81,9 +81,10 @@ tOutFitList['outfit_priest'] = {
 	"item_aghanims_shard",
 	"item_lotus_orb",
 	"item_travel_boots",
+	"item_overwhelming_blink", 
 	"item_travel_boots_2",
-	"item_ultimate_scepter_2",
 	"item_moon_shard",
+	"item_ultimate_scepter_2",
 }
 
 tOutFitList['outfit_mage'] = tOutFitList['outfit_priest']
@@ -105,8 +106,10 @@ tOutFitList['outfit_tank'] = {
 	"item_crimson_guard",
 	"item_manta",
 	"item_lotus_orb",
+	"item_black_king_bar",
 	"item_travel_boots",
 	"item_assault",
+	"item_overwhelming_blink", 
 	"item_travel_boots_2",
 	"item_ultimate_scepter_2",
 	"item_moon_shard",
@@ -115,15 +118,11 @@ tOutFitList['outfit_tank'] = {
 X['sBuyList'] = tOutFitList[sOutfitType]
 
 X['sSellList'] = {
-
-
-	"item_travel_boots",
-	"item_quelling_blade",
-
-	"item_abyssal_blade",
+	"item_manta",
 	"item_magic_wand",
 
-
+	"item_black_king_bar",
+	"item_bracer",
 }
 
 
