@@ -24,9 +24,8 @@ local tTalentTreeList = {
 }
 
 local tAllAbilityBuildList = {
-						{1,2,1,3,1,6,1,3,3,3,6,2,2,2,6},
 						{1,2,1,3,1,6,1,2,2,2,6,3,3,3,6},
-						{1,3,1,2,1,6,1,3,3,3,6,2,2,2,6},
+						{1,3,1,2,1,6,1,2,2,2,6,3,3,3,6},
 }
 
 local nAbilityBuildList = J.Skill.GetRandomBuild( tAllAbilityBuildList )
@@ -36,24 +35,59 @@ local nTalentBuildList = J.Skill.GetTalentBuild( tTalentTreeList )
 local tOutFitList = {}
 
 tOutFitList['outfit_carry'] = {
-
-	"item_phantom_assassin_outfit",
---	"item_wraith_band",
+	"item_tango",
+	"item_tango",
+	"item_flask",
+	"item_quelling_blade",
+	"item_branches",
+	"item_branches",
+	"item_orb_of_venom",
+	"item_magic_wand",
+	"item_boots",
+	"item_blight_stone",
+	"item_power_treads_agi",
+	"item_orb_of_corrosion",
 	"item_bfury",
-	"item_aghanims_shard",
 	"item_desolator",
 	"item_black_king_bar",
+	"item_aghanims_shard",
+	"item_lifesteal",
+	"item_basher",
 	"item_travel_boots",
-	"item_satanic",
 	"item_abyssal_blade",
+	"item_skadi",
+	"item_satanic",
 	"item_moon_shard",
 	"item_travel_boots_2",
 	"item_ultimate_scepter_2",
-
-
 }
 
-tOutFitList['outfit_mid'] = tOutFitList['outfit_carry']
+tOutFitList['outfit_mid'] = {
+	"item_tango",
+	"item_faerie_fire",
+	"item_faerie_fire",
+	"item_flask",
+	"item_quelling_blade",
+	"item_branches",
+	"item_orb_of_venom",
+	"item_magic_wand",
+	"item_boots",
+	"item_blight_stone",
+	"item_phase_boots",
+	"item_orb_of_corrosion",
+	"item_desolator",
+	"item_lifesteal",
+	"item_black_king_bar",
+	"item_aghanims_shard",
+	"item_basher",
+	"item_travel_boots",
+	"item_abyssal_blade",
+	"item_skadi",
+	"item_satanic",
+	"item_moon_shard",
+	"item_travel_boots_2",
+	"item_ultimate_scepter_2",
+}
 
 tOutFitList['outfit_priest'] = tOutFitList['outfit_carry']
 
@@ -65,10 +99,14 @@ X['sBuyList'] = tOutFitList[sOutfitType]
 
 
 X['sSellList'] = {
+	'item_skadi',
+	'item_desolator',
 
-	'item_satanic',
+	'item_abyssal_blade',
+	'item_orb_of_corrosion',
+
+	'item_basher',
 	'item_magic_wand',
-
 }
 
 if J.Role.IsPvNMode() or J.Role.IsAllShadow() then X['sBuyList'], X['sSellList'] = { 'PvN_PA' }, {"item_power_treads", 'item_quelling_blade'} end
