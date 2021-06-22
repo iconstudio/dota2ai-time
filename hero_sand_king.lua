@@ -36,58 +36,111 @@ local nTalentBuildList = J.Skill.GetTalentBuild( tTalentTreeList )
 local tOutFitList = {}
 
 tOutFitList['outfit_carry'] = {
-
-	"item_bristleback_outfit",
+	"item_tango",
+	"item_tango",
+	"item_enchanted_mango",
+	"item_clarity",
+	"item_clarity",
+	"item_circlet",
+	"item_null_talisman",
+	"item_magic_stick",
+	"item_boots",
+	"item_magic_wand",
+	"item_clarity",
+	"item_clarity",
+	"item_blink",
+	"item_arcane_boots",
+	"item_force_staff",
+	"item_aether_lens",
+	"item_ultimate_scepter",
 	"item_aghanims_shard",
-	"item_blade_mail",
-	"item_heavens_halberd",
-	"item_lotus_orb",
 	"item_black_king_bar",
+	"item_shivas_guard",
 	"item_travel_boots",
-	"item_abyssal_blade", 
---	"item_heart",
-	"item_moon_shard",
+	"item_octarine_core",
 	"item_travel_boots_2",
-
+	"item_ultimate_scepter_2",
+	"item_overwhelming_blink",
+	"item_moon_shard",
 }
 
-tOutFitList['outfit_mid'] = tOutFitList['outfit_carry']
+tOutFitList['outfit_mid'] = {
+	"item_flask",
+	"item_tango",
+	"item_tango",
+	"item_enchanted_mango",
+	"item_enchanted_mango",
+	"item_clarity",
+	"item_bracer",
+	"item_magic_stick",
+	"item_boots",
+	"item_magic_wand",
+	"item_clarity",
+	"item_clarity",
+	"item_arcane_boots",
+	"item_infused_raindrop",
+	"item_blink",
+	"item_aether_lens",
+	"item_cyclone",
+	"item_ultimate_scepter",
+	"item_aghanims_shard",
+	"item_shivas_guard",
+	"item_black_king_bar",
+	"item_travel_boots",
+	"item_octarine_core",
+	"item_travel_boots_2",
+	"item_ultimate_scepter_2",
+	"item_overwhelming_blink",
+	"item_moon_shard",
+}
 
 tOutFitList['outfit_priest'] = tOutFitList['outfit_carry']
 
 tOutFitList['outfit_mage'] = tOutFitList['outfit_carry']
 
 tOutFitList['outfit_tank'] = {
-
-	"item_tank_outfit",
-	"item_crimson_guard",
+	"item_flask",
+	"item_tango",
+	"item_enchanted_mango",
+	"item_clarity",
+	"item_clarity",
+	"item_circlet",
+	"item_bracer",
+	"item_magic_stick",
+	"item_boots",
+	"item_magic_wand",
+	"item_clarity",
+	"item_clarity",
+	"item_blink",
+	"item_arcane_boots",
+	"item_cyclone",
+	"item_ultimate_scepter",
 	"item_aghanims_shard",
-	"item_heavens_halberd",
-	"item_lotus_orb",
+	"item_aether_lens",
+	"item_shivas_guard",
+	"item_pipe",
 	"item_travel_boots",
-	"item_assault",
-	"item_heart",
-	"item_moon_shard",
+	"item_octarine_core",
 	"item_travel_boots_2",
-
+	"item_ultimate_scepter_2",
+	"item_overwhelming_blink",
+	"item_moon_shard",
 }
 
 X['sBuyList'] = tOutFitList[sOutfitType]
 
 X['sSellList'] = {
+	"item_moon_shard",
+	"item_force_staff",
 
-	"item_power_treads",
-	"item_quelling_blade",
+	"item_moon_shard",
+	"item_cyclone",
 
-	"item_assault",
+	"item_shivas_guard",
 	"item_magic_wand",
 	
-	"item_abyssal_blade",
+	"item_black_king_bar",
 	"item_magic_wand",
-	
-	"item_assault",
-	"item_ancient_janggo",
-
 }
 
 if J.Role.IsPvNMode() or J.Role.IsAllShadow() then X['sBuyList'], X['sSellList'] = { 'PvN_tank' }, {"item_power_treads", 'item_quelling_blade'} end
@@ -562,4 +615,3 @@ end
 
 return X
 -- dota2jmz@163.com QQ:2462331592.
-
