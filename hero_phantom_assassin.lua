@@ -55,7 +55,7 @@ tOutFitList['outfit_carry'] = {
 	"item_basher",
 	"item_travel_boots",
 	"item_abyssal_blade",
-	"item_skadi",
+	"item_assault",
 	"item_satanic",
 	"item_moon_shard",
 	"item_travel_boots_2",
@@ -80,8 +80,8 @@ tOutFitList['outfit_mid'] = {
 	"item_black_king_bar",
 	"item_aghanims_shard",
 	"item_basher",
-	"item_travel_boots",
 	"item_abyssal_blade",
+	"item_travel_boots",
 	"item_skadi",
 	"item_satanic",
 	"item_moon_shard",
@@ -99,9 +99,6 @@ X['sBuyList'] = tOutFitList[sOutfitType]
 
 
 X['sSellList'] = {
-	'item_skadi',
-	'item_desolator',
-
 	'item_abyssal_blade',
 	'item_orb_of_corrosion',
 
