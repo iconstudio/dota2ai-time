@@ -125,11 +125,17 @@ X['sSellList'] = {
 	"item_glimmer_cape",
 	"item_bracer",
 
+	"item_veil_of_discord",
+	"item_null_talisman",
+
 	"item_travel_boots",
 	"item_urn_of_shadows",
 
-	"item_veil_of_discord",
-	"item_null_talisman",
+	"item_wind_waker",
+	"item_aether_lens",
+
+	"item_sheepstick",
+	"item_aether_lens",
 
 	"item_ultimate_scepter",
 	"item_magic_wand",
