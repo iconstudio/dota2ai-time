@@ -176,19 +176,20 @@ X['sBuyList'] = tOutFitList[sOutfitType]
 
 
 X['sSellList'] = {
+	"item_pipe",
+	"item_magic_wand",
 
-	"item_power_treads",
+	"item_orb_of_corrosion",
 	"item_quelling_blade",
 
 	"item_heavens_halberd",
 	"item_quelling_blade",
 
-	"item_abyssal_blade",
+	"item_heavens_halberd",
 	"item_magic_wand",
 
 	"item_assault",
-	"item_ancient_janggo",
-
+	"item_bracer",
 }
 
 if J.Role.IsPvNMode() then X['sBuyList'], X['sSellList'] = { 'PvN_BH' }, {"item_power_treads", 'item_quelling_blade'} end
