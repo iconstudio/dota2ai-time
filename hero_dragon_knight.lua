@@ -92,21 +92,20 @@ tOutFitList['outfit_tank'] = tOutFitList['outfit_carry']
 X['sBuyList'] = tOutFitList[sOutfitType]
 
 X['sSellList'] = {
-
 	"item_power_treads",
 	"item_quelling_blade",
 
-	"item_heart",
+	"item_assault",
 	"item_magic_wand",
 	
 	"item_travel_boots",
 	"item_magic_wand",
 
-	'item_heart',
-	'item_armlet',
+	'item_skadi',
+	'item_soul_ring',
 
-	"item_assault",
-	"item_ancient_janggo",
+	'item_assault',
+	'item_soul_ring',
 }
 
 if J.Role.IsPvNMode() or J.Role.IsAllShadow() then X['sBuyList'], X['sSellList'] = { 'PvN_tank' }, {"item_power_treads", 'item_quelling_blade'} end
