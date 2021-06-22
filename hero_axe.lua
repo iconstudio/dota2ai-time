@@ -43,6 +43,7 @@ tOutFitList['outfit_carry'] = {
 	"item_magic_stick",
 	"item_boots",
 	"item_magic_wand",
+	"item_buckler",
 	"item_infused_raindrop",
 	"item_vanguard",
 	"item_blink",
