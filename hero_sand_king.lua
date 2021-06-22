@@ -130,6 +130,9 @@ tOutFitList['outfit_tank'] = {
 X['sBuyList'] = tOutFitList[sOutfitType]
 
 X['sSellList'] = {
+	"item_travel_boots_2",
+	"item_aether_lens",
+
 	"item_moon_shard",
 	"item_force_staff",
 
