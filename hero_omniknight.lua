@@ -24,7 +24,7 @@ local tTalentTreeList = {
 }
 
 local tAllAbilityBuildList = {
-						{1,2,1,3,1,6,1,2,2,2,6,3,3,3,6},
+						{1,3,2,1,1,6,1,2,2,2,6,3,3,3,6},
 						{1,2,2,1,1,6,1,2,2,3,6,3,3,3,6},
 }
 
@@ -35,68 +35,116 @@ local nTalentBuildList = J.Skill.GetTalentBuild( tTalentTreeList )
 local tOutFitList = {}
 
 tOutFitList['outfit_carry'] = {
-
-	"item_bristleback_outfit",
+	"item_flask",
+	"item_tango",
+	"item_tango",
+	"item_orb_of_venom",
+	"item_ring_of_protection",
 	"item_soul_ring",
-	"item_echo_sabre",
+	"item_magic_stick",
+	"item_boots",
+	"item_bracer",
+	"item_phase_boots",
+	"item_medallion_of_courage",
+	"item_mekansm",
+	"item_ancient_janggo",
 	"item_aghanims_shard",
-	"item_ultimate_scepter",
-	"item_lotus_orb",
+	"item_solar_crest",
 	"item_black_king_bar",
 	"item_travel_boots",
-	"item_abyssal_blade",
-	"item_heart",
+	"item_assault",
 	"item_moon_shard",
+	"item_ultimate_scepter",
 	"item_travel_boots_2",
 	"item_ultimate_scepter_2",
-	"item_sheepstick",
-
 }
 
 tOutFitList['outfit_mid'] = tOutFitList['outfit_carry']
 
-tOutFitList['outfit_priest'] = tOutFitList['outfit_carry']
-
-tOutFitList['outfit_mage'] = tOutFitList['outfit_carry']
-
-tOutFitList['outfit_tank'] = {
-	
-	"item_tank_outfit",
-	"item_echo_sabre",
+tOutFitList['outfit_priest'] = {
+	"item_flask",
+	"item_tango",
+	"item_enchanted_mango",
+	"item_ring_of_protection",
+	"item_clarity",
+	"item_clarity",
+	"item_magic_stick",
+	"item_soul_ring",
+	"item_boots",
+	"item_magic_wand",
+	"item_mekansm",
 	"item_aghanims_shard",
-	"item_crimson_guard",
+	"item_lotus_orb",
+	"item_pipe",
+	"item_guardian_greaves",
 	"item_ultimate_scepter",
-	"item_heavens_halberd",
+	"item_shivas_guard",
 	"item_travel_boots",
-	"item_assault",
-	"item_refresher",
 	"item_moon_shard",
 	"item_travel_boots_2",
 	"item_ultimate_scepter_2",
 	"item_sheepstick",
-	
+}
 
+tOutFitList['outfit_mage'] = tOutFitList['outfit_priest']
+
+tOutFitList['outfit_tank'] = {
+	"item_flask",
+	"item_tango",
+	"item_enchanted_mango",
+	"item_ring_of_protection",
+	"item_clarity",
+	"item_clarity",
+	"item_soul_ring",
+	"item_magic_wand",
+	"item_boots",
+	"item_arcane_boots",
+	"item_mekansm",
+	"item_solar_crest",
+	"item_heavens_halberd",
+	"item_ultimate_scepter",
+	"item_shivas_guard",
+	"item_guardian_greaves",
+	"item_aghanims_shard",
+	"item_travel_boots",
+	"item_ultimate_scepter_2",
+	"item_refresher",
+	"item_moon_shard",
+	"item_travel_boots_2",
 }
 
 X['sBuyList'] = tOutFitList[sOutfitType]
 
 X['sSellList'] = {
+	"item_mekansm",
+	"item_magic_stick",
 
-	"item_power_treads",
-	"item_quelling_blade",
+	"item_pipe",
+	"item_magic_wand",
+
+	"item_crimson_guard",
+	"item_magic_wand",
+
+	"item_aghanims_shard",
+	"item_orb_of_venom",
 
 	"item_black_king_bar",
 	"item_magic_wand",
 	
 	"item_ultimate_scepter",
-	"item_echo_sabre",
+	"item_magic_wand",
+	
+	"item_guardian_greaves",
+	"item_soul_ring",
+
+	"item_refresher",
+	"item_soul_ring",
 
 	"item_travel_boots",
-	"item_magic_wand",
+	"item_soul_ring",
 
-	"item_assault",
+	"item_moon_shard",
 	"item_ancient_janggo",
-
 }
 
 
@@ -729,4 +777,3 @@ end
 
 return X
 -- dota2jmz@163.com QQ:2462331592
-
