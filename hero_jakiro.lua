@@ -40,54 +40,81 @@ tOutFitList['outfit_carry'] = {
 	"item_enchanted_mango",
 	"item_clarity",
 	"item_clarity",
+	"item_magic_stick",
 	"item_null_talisman",
-	"item_glimmer_cape",
-	"item_aghanims_shard",
+	"item_boots",
+	"item_magic_wand",
+	"item_tranquil_boots",
+	"item_cyclone",
 	"item_force_staff",
+	"item_veil_of_discord",
+	"item_aghanims_shard",
+	"item_aether_lens",
 	"item_ultimate_scepter",
+	"item_travel_boots",
 	"item_hurricane_pike",
-	"item_cyclone", 
+	"item_octarine_core",
+	"item_ultimate_scepter_2",
 	"item_sheepstick",
+	"item_travel_boots_2",
 	"item_wind_waker",
 	"item_moon_shard",
-	"item_ultimate_scepter_2",
-	"item_lotus_orb",
-
 }
 
 tOutFitList['outfit_mid'] = tOutFitList['outfit_carry']
 
 tOutFitList['outfit_priest'] = {
-
-	"item_priest_outfit",
+	"item_flask",
+	"item_tango",
+	"item_clarity",
+	"item_clarity",
+	"item_circlet",
+	"item_branches",
+	"item_bracer",
+	"item_boots",
+	"item_magic_stick",
+	"item_arcane_boots",
 	"item_urn_of_shadows",
 	"item_mekansm",
 	"item_glimmer_cape",
 	"item_aghanims_shard",
-	"item_guardian_greaves",
-	"item_spirit_vessel",
 	"item_vladmir",
 	"item_ultimate_scepter",
 	"item_shivas_guard",
-	"item_moon_shard",
+	"item_guardian_greaves",
+	"item_travel_boots",
+	"item_travel_boots_2",
 	"item_ultimate_scepter_2",
 	"item_sheepstick",
-
+	"item_moon_shard",
 }
 
 tOutFitList['outfit_mage'] = {
-
-	"item_mage_outfit",
-	"item_glimmer_cape",
-	"item_pipe",
-	"item_aghanims_shard",
-	"item_veil_of_discord",
+	"item_flask",
+	"item_tango",
+	"item_clarity",
+	"item_clarity",
+	"item_mantle",
+	"item_null_talisman",
+	"item_boots",
+	"item_magic_stick",
+	"item_magic_wand",
+	"item_tranquil_boots",
 	"item_cyclone",
-	"item_sheepstick",
+	"item_force_staff",
+	"item_veil_of_discord",
+	"item_aghanims_shard",
+	"item_aether_lens",
+	"item_ultimate_scepter",
+	"item_travel_boots",
+	"item_hurricane_pike",
+	"item_octarine_core",
 	"item_wind_waker",
-	"item_moon_shard",
+	"item_travel_boots_2",
 	"item_ultimate_scepter_2",
-
+	"item_sheepstick",
+	
+	"item_moon_shard",
 }
 
 tOutFitList['outfit_tank'] = tOutFitList['outfit_carry']
@@ -95,11 +122,22 @@ tOutFitList['outfit_tank'] = tOutFitList['outfit_carry']
 X['sBuyList'] = tOutFitList[sOutfitType]
 
 X['sSellList'] = {
+	"item_glimmer_cape",
+	"item_bracer",
 
-	"item_cyclone",
-	"item_magic_wand",
+	"item_travel_boots",
+	"item_urn_of_shadows",
+
+	"item_veil_of_discord",
+	"item_null_talisman",
 
 	"item_ultimate_scepter",
+	"item_magic_wand",
+
+	"item_force_staff",
+	"item_magic_wand",
+
+	"item_aghanims_shard",
 	"item_magic_wand",
 	
 }
