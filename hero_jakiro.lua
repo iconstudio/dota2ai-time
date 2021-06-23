@@ -44,7 +44,6 @@ tOutFitList['outfit_carry'] = {
 	"item_magic_stick",
 	"item_null_talisman",
 	"item_tranquil_boots",
-	"item_circlet",
 	"item_branches",
 	"item_recipe_magic_wand",
 	"item_cyclone",

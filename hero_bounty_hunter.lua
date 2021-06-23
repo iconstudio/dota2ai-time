@@ -158,7 +158,6 @@ tOutFitList['outfit_tank'] = {
 	"item_magic_stick",
 	"item_boots",
 	"item_branches",
-	"item_circlet",
 	"item_recipe_magic_wand",
 	"item_blight_stone",
 	"item_fluffy_hat",
