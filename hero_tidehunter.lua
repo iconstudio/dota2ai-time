@@ -26,7 +26,6 @@ local tTalentTreeList = {
 local tAllAbilityBuildList = {
 						{3,1,3,2,3,6,3,1,1,1,6,2,2,2,6},
 						{3,1,3,2,3,6,3,2,2,2,6,1,1,1,6},
-						{1,3,1,2,1,6,1,3,3,3,6,2,2,2,6},
 }
 
 local nAbilityBuildList = J.Skill.GetRandomBuild( tAllAbilityBuildList )
@@ -36,49 +35,80 @@ local nTalentBuildList = J.Skill.GetTalentBuild( tTalentTreeList )
 local tOutFitList = {}
 
 tOutFitList['outfit_carry'] = {
-
-	"item_bristleback_outfit",
+	"item_flask",
+	"item_tango",
+	"item_enchanted_mango",
+	"item_quelling_blade",
+	"item_branches",
+	"item_branches",
 	"item_bracer",
-	"item_point_booster",
+	"item_magic_stick",
+	"item_boots",
+	"item_recipe_magic_wand",
+	"item_energy_booster",
+	"item_hood_of_defiance",
+	"item_mekansm",
+	"item_headdress",
+	"item_recipe_pipe",
+	"item_guardian_greaves",
 	"item_blink",
-	"item_ultimate_scepter",
 	"item_aghanims_shard",
-	"item_black_king_bar",	
+	"item_black_king_bar",
 	"item_travel_boots",
-	"item_skadi",
-	"item_satanic",
-	"item_overwhelming_blink",	
-	"item_ultimate_scepter_2",
-	"item_greater_crit",
-	"item_moon_shard",
+	"item_arcane_blink",
 	"item_travel_boots_2",
-
+	"item_ultimate_scepter_2",
+	"item_refresher",
+	"item_moon_shard",
 }
 
 tOutFitList['outfit_mid'] = tOutFitList['outfit_carry']
 
-tOutFitList['outfit_priest'] = tOutFitList['outfit_carry']
+tOutFitList['outfit_priest'] = {
+	"item_flask",
+	"item_tango",
+	"item_enchanted_mango",
+	"item_quelling_blade",
+	"item_branches",
+	"item_branches",
+	"item_bracer",
+	"item_magic_stick",
+	"item_boots",
+	"item_recipe_magic_wand",
+	"item_energy_booster",
+	"item_mekansm",
+	"item_ancient_janggo",
+	"item_pipe",
+	"item_blink",
+	"item_guardian_greaves",
+	"item_ultimate_scepter",
+	"item_shivas_guard",
+	"item_aghanims_shard",
+	"item_ultimate_scepter_2",
+	"item_arcane_blink",
+	"item_travel_boots_2",
+	"item_refresher",
+	"item_moon_shard",
+}
 
-tOutFitList['outfit_mage'] = tOutFitList['outfit_carry']
+tOutFitList['outfit_mage'] = tOutFitList['outfit_priest']
 
-tOutFitList['outfit_tank'] = tOutFitList['outfit_carry']
+tOutFitList['outfit_tank'] = tOutFitList['outfit_priest']
 
 X['sBuyList'] = tOutFitList[sOutfitType]
 
 X['sSellList'] = {
+	"item_ultimate_scepter",
+	"item_ancient_janggo",
 
-	"item_echo_sabre",
+	"item_ancient_janggo",
 	"item_quelling_blade",
+
+	"item_ultimate_scepter",
+	"item_magic_wand",
 
 	"item_black_king_bar",
 	"item_magic_wand",
-
-	"item_greater_crit",
-	"item_hand_of_midas",
-
-	"item_abyssal_blade",
-	"item_blight_stone",
-
 }
 
 
@@ -670,4 +700,3 @@ end
 
 return X
 -- dota2jmz@163.com QQ:2462331592.
-
