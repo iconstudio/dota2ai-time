@@ -25,7 +25,7 @@ local tTalentTreeList = {
 }
 
 local tAllAbilityBuildList = {
-						{2,3,1,1,1,6,1,3,3,3,6,2,2,2,6},
+						{1,3,1,3,2,6,1,3,1,3,6,2,2,2,6},
 }
 
 local nAbilityBuildList = J.Skill.GetRandomBuild( tAllAbilityBuildList )
@@ -37,16 +37,17 @@ local tOutFitList = {}
 tOutFitList['outfit_carry'] = {
 	"item_tango",
 	"item_flask",
-	"item_ring_of_protection",
 	"item_quelling_blade",
 	"item_magic_stick",
-	"item_boots",
 	"item_soul_ring",
 	"item_bracer",
-	"item_power_treads_str",
+	"item_boots",
+	"item_magic_wand",
+	"item_gloves",
+	"item_belt_of_strength",
+	"item_ultimate_scepter",
 	"item_blink",
 	"item_black_king_bar",
-	"item_ultimate_scepter",
 	"item_aghanims_shard",
 	"item_assault",
 	"item_travel_boots",
@@ -63,16 +64,16 @@ tOutFitList['outfit_mid'] = tOutFitList['outfit_carry']
 tOutFitList['outfit_priest'] = {
 	"item_tango",
 	"item_flask",
-	"item_ring_of_protection",
 	"item_branches",
 	"item_branches",
 	"item_soul_ring",
 	"item_magic_stick",
 	"item_bracer",
 	"item_phase_boots",
-	"item_magic_wand",
-	"item_blink",
+	"item_circlet",
+	"item_recipe_magic_wand",
 	"item_ultimate_scepter",
+	"item_blink",
 	"item_black_king_bar",
 	"item_aghanims_shard",
 	"item_heavens_halberd",
@@ -100,9 +101,6 @@ X['sSellList'] = {
 	
 	"item_travel_boots",
 	"item_magic_wand",
-
-	'item_skadi',
-	'item_soul_ring',
 
 	'item_assault',
 	'item_soul_ring',
