@@ -19,8 +19,8 @@ local sOutfitType = J.Item.GetOutfitType( bot )
 local tTalentTreeList = {
 						['t25'] = {10, 0},
 						['t20'] = {0, 10},
-						['t15'] = {0, 10},
-						['t10'] = {10, 0},
+						['t15'] = {10, 0},
+						['t10'] = {0, 10},
 }
 
 local tAllAbilityBuildList = {
@@ -34,66 +34,97 @@ local nTalentBuildList = J.Skill.GetTalentBuild( tTalentTreeList )
 local tOutFitList = {}
 
 tOutFitList['outfit_carry'] = {
-
-	"item_mage_outfit",
-	"item_dragon_lance",
-	"item_maelstrom",
-	"item_force_staff",
---	"item_aghanims_shard",
---	"item_ultimate_scepter",
-	"item_sheepstick",
-	"item_hurricane_pike",
-	"item_shivas_guard",
+	"item_flask",
+	"item_tango",
+	"item_tango",
+	"item_circlet",
+	"item_magic_wand",
+	"item_mantle",
+	"item_recipe_null_talisman",
+	"item_null_talisman",
+	"item_phase_boots",
+	"item_javelin",
+	"item_ogre_axe",
+	"item_recipe_black_king_bar",
+	"item_mithril_hammer",
+	"item_mithril_hammer",
+	"item_ultimate_scepter",
+	"item_lesser_crit",
+	"item_monkey_king_bar",
+	"item_aghanims_shard",
+	"item_greater_crit",
 	"item_gungir",
 	"item_moon_shard",
---	"item_ultimate_scepter_2",
-	"item_monkey_king_bar",
-
+	"item_ultimate_scepter_2",
+	"item_sheepstick",
 }
 
-tOutFitList['outfit_mid'] = tOutFitList['outfit_carry']
+tOutFitList['outfit_mid'] = {
+	"item_flask",
+	"item_tango",
+	"item_faerie_fire",
+	"item_faerie_fire",
+	"item_branches",
+	"item_branches",
+	"item_circlet",
+	"item_magic_stick",
+	"item_recipe_magic_wand",
+	"item_flask",
+	"item_mantle",
+	"item_recipe_null_talisman",
+	"item_null_talisman",
+	"item_tango",
+	"item_phase_boots",
+	"item_javelin",
+	"item_ogre_axe",
+	"item_recipe_black_king_bar",
+	"item_mithril_hammer",
+	"item_mithril_hammer",
+	"item_ultimate_scepter",
+	"item_lesser_crit",
+	"item_monkey_king_bar",
+	"item_aghanims_shard",
+	"item_greater_crit",
+	"item_gungir",
+	"item_moon_shard",
+	"item_ultimate_scepter_2",
+	"item_sheepstick",
+}
 
 tOutFitList['outfit_priest'] = {
-
-	"item_priest_outfit",
-	"item_urn_of_shadows",
-	"item_mekansm",
-	"item_glimmer_cape",
---	"item_aghanims_shard",
-	"item_guardian_greaves",
-	"item_spirit_vessel",
-	"item_vladmir",
---	"item_ultimate_scepter",
-	"item_shivas_guard",
-	"item_moon_shard",
---	"item_ultimate_scepter_2",
+	"item_flask",
+	"item_tango",
+	"item_tango",
+	"item_circlet",
+	"item_magic_wand",
+	"item_mantle",
+	"item_recipe_null_talisman",
+	"item_phase_boots",
+	"item_force_staff",
+	"item_maelstrom",
+	"item_aghanims_shard",
+	"item_solar_crest",
+	"item_ultimate_scepter",
+	"item_hurricane_pike",
+	"item_travel_boots",
+	"item_monkey_king_bar",
+	"item_ultimate_scepter_2",
 	"item_sheepstick",
-
+	"item_travel_boots_2",
+	"item_gungir",
+	"item_moon_shard",
 }
 
-tOutFitList['outfit_mage'] = {
-
-	"item_mage_outfit",
-	"item_glimmer_cape",
-	"item_pipe",
-	"item_veil_of_discord",
-	"item_cyclone",
-	"item_sheepstick",
-	"item_wind_waker",
-	"item_moon_shard",
-
-}
+tOutFitList['outfit_mage'] = tOutFitList['outfit_priest']
 
 X['sBuyList'] = tOutFitList[sOutfitType]
 
 X['sSellList'] = {
-
-	"item_shivas_guard",
+	"item_travel_boots",
 	"item_magic_wand",
 	
-	"item_sheepstick",
+	"item_lesser_crit",
 	"item_magic_wand",
-
 }
 
 
@@ -326,6 +357,3 @@ end
 
 return X
 -- dota2jmz@163.com QQ:2462331592
-
-
-
