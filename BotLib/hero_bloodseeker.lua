@@ -17,16 +17,15 @@ local sAbilityList = J.Skill.GetAbilityList( bot )
 local sOutfitType = J.Item.GetOutfitType( bot )
 
 local tTalentTreeList = {
-						['t25'] = {0, 10},
+						['t25'] = {10, 0},
 						['t20'] = {10, 0},
 						['t15'] = {0, 10},
 						['t10'] = {0, 10},
 }
 
 local tAllAbilityBuildList = {
-						{1,3,2,3,1,6,1,1,3,3,6,2,2,2,6},
-						{1,3,2,3,3,6,3,1,1,1,6,2,2,2,6},
-						{1,3,2,2,2,6,2,3,3,3,6,1,1,1,6},
+						{3,2,2,1,3,6,3,2,2,3,6,1,1,1,6},
+						{3,2,2,3,2,6,1,3,3,2,6,1,1,1,6},
 }
 
 local nAbilityBuildList = J.Skill.GetRandomBuild( tAllAbilityBuildList )
@@ -38,22 +37,52 @@ local sRandomItem_1 = RandomInt( 1, 9 ) > 6 and "item_monkey_king_bar" or "item_
 local tOutFitList = {}
 
 tOutFitList['outfit_carry'] = {
-
-	"item_melee_carry_outfit",
-	"item_yasha",
-	"item_aghanims_shard",
-	"item_diffusal_blade",
+	"item_flask",
+	"item_tango",
+	"item_tango",
+	"item_faerie_fire",
+	"item_branches",
+	"item_branches",
+	"item_wraith_band",
+	"item_magic_stick",
+	"item_recipe_magic_wand",
+	"item_wraith_band",
+	"item_phase_boots",
 	"item_sange_and_yasha",
 	"item_black_king_bar",
+	"item_basher",
+	"item_aghanims_shard",
 	"item_travel_boots",
+	"item_mjollnir",
 	"item_abyssal_blade",
-	sRandomItem_1,
-	"item_moon_shard",
 	"item_travel_boots_2",
-
+	"item_moon_shard",
 }
 
-tOutFitList['outfit_mid'] = tOutFitList['outfit_carry']
+tOutFitList['outfit_mid'] = {
+	"item_flask",
+	"item_tango",
+	"item_tango",
+	"item_quelling_blade",
+	"item_branches",
+	"item_branches",
+	"item_wraith_band",
+	"item_magic_stick",
+	"item_recipe_magic_wand",
+	"item_blight_stone",
+	"item_phase_boots",
+	"item_desolator",
+	"item_blade_mail",
+	"item_sange_and_yasha",
+	"item_black_king_bar",
+	"item_basher",
+	"item_travel_boots",
+	"item_mjollnir",
+	"item_aghanims_shard",
+	"item_abyssal_blade",
+	"item_travel_boots_2",
+	"item_moon_shard",
+}
 
 tOutFitList['outfit_priest'] = tOutFitList['outfit_carry']
 
@@ -64,13 +93,20 @@ tOutFitList['outfit_tank'] = tOutFitList['outfit_carry']
 X['sBuyList'] = tOutFitList[sOutfitType]
 
 X['sSellList'] = {
-
-	"item_power_treads",
+	"item_sange_and_yasha",
 	"item_quelling_blade",
+
+	"item_basher",
+	"item_wraith_band",
+
+	"item_travel_boots_2",
+	"item_blade_mail",
+
+	"item_aghanims_shard",
+	"item_desolator",
 
 	"item_abyssal_blade",
 	"item_magic_wand",
-
 }
 
 nAbilityBuildList, nTalentBuildList, X['sBuyList'], X['sSellList'] = J.SetUserHeroInit( nAbilityBuildList, nTalentBuildList, X['sBuyList'], X['sSellList'] )
