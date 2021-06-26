@@ -12,7 +12,7 @@ local bot = GetBot()
 
 
 local J = require( GetScriptDirectory()..'/FunLib/jmz_func' )
-local Minion = dofile( GetScriptDirectory()..'/FunLib/Minion' )
+local Minion = dofile( GetScriptDirectory()..'/FunLib/aba_minion' )
 local sTalentList = J.Skill.GetTalentList( bot )
 local sAbilityList = J.Skill.GetAbilityList( bot )
 local sOutfitType = J.Item.GetOutfitType( bot )
