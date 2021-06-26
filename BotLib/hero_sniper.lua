@@ -31,8 +31,8 @@ else
 end
 
 local tAllAbilityBuildList = {
-						{2,3,2,1,2,6,2,1,1,1,6,3,3,3,6},
-						{2,3,2,1,2,6,2,3,3,3,6,1,1,1,6},
+						{2,1,1,3,1,6,3,1,3,3,6,2,2,2,6},
+						{2,1,3,1,3,6,3,3,2,2,6,2,1,1,6},
 }
 
 local nAbilityBuildList = J.Skill.GetRandomBuild( tAllAbilityBuildList )
@@ -42,45 +42,39 @@ local nTalentBuildList = J.Skill.GetTalentBuild( tTalentTreeList )
 local tOutFitList = {}
 
 tOutFitList['outfit_carry'] = {
-
 	"item_ranged_carry_outfit",
 	"item_dragon_lance",
 	"item_mask_of_madness",
-	"item_aghanims_shard",
 	"item_maelstrom",
+	"item_lesser_crit",
 	"item_hurricane_pike",
-	"item_ultimate_scepter",
-	"item_travel_boots",
-	"item_skadi",
+	"item_black_king_bar",
+	"item_aghanims_shard",
+	"item_greater_crit",
 	"item_mjollnir",
+	"item_skadi",
+	"item_travel_boots_2",
 	"item_broken_satanic",
 	"item_moon_shard",
-	"item_travel_boots_2",
 	"item_ultimate_scepter_2",
-	"item_butterfly",
-
-
 }
 
 tOutFitList['outfit_mid'] = {
-
 	"item_mid_outfit",
 	"item_dragon_lance",
 	"item_mask_of_madness",
 	"item_aghanims_shard",
 	"item_maelstrom",
 	"item_hurricane_pike",
+	"item_mjollnir",
+	"item_skadi",
+	"item_broken_satanic",
 	"item_ultimate_scepter",
 	"item_travel_boots",
-	"item_skadi",
-	"item_mjollnir",
-	"item_broken_satanic",
 	"item_moon_shard",
 	"item_travel_boots_2",
 	"item_ultimate_scepter_2", 
 	"item_butterfly",
-
-
 }
 
 tOutFitList['outfit_priest'] = tOutFitList['outfit_carry']
@@ -91,27 +85,6 @@ tOutFitList['outfit_tank'] = tOutFitList['outfit_carry']
 
 X['sBuyList'] = tOutFitList[sOutfitType]
 
-if RandomInt( 1, 99 ) >= 88
-then
-	X['sBuyList'] = {
-					"item_ranged_carry_outfit",
-					"item_dragon_lance",
-					"item_hand_of_midas",
-					"item_aghanims_shard",
-					"item_maelstrom",
-					"item_hurricane_pike",
-					"item_ultimate_scepter",
-					"item_mjollnir",
-					"item_skadi",
-					"item_travel_boots",
-					"item_greater_crit",
-					"item_moon_shard",
-					"item_travel_boots_2",
-					"item_ultimate_scepter_2",
-					"item_monkey_king_bar",
-
-	}
-end
 
 
 X['sSellList'] = {
