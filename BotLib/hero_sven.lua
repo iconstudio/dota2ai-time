@@ -34,21 +34,18 @@ local nTalentBuildList = J.Skill.GetTalentBuild( tTalentTreeList )
 local tOutFitList = {}
 
 tOutFitList['outfit_carry'] = {
-
 	"item_sven_outfit",
 	"item_echo_sabre",
-	"item_hand_of_midas",
 	"item_aghanims_shard",
 	"item_blink",
 	"item_black_king_bar",
-	"item_travel_boots",
-	"item_satanic",
-	"item_overwhelming_blink",
-	"item_greater_crit", 
 	"item_abyssal_blade",
+	"item_travel_boots",
+	"item_greater_crit", 
+	"item_satanic",
 	"item_moon_shard",
+	"item_overwhelming_blink",
 	"item_travel_boots_2",
-
 }
 
 tOutFitList['outfit_mid'] = tOutFitList['outfit_carry']
