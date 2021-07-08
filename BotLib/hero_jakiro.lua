@@ -34,18 +34,15 @@ local nTalentBuildList = J.Skill.GetTalentBuild( tTalentTreeList )
 local tOutFitList = {}
 
 tOutFitList['outfit_carry'] = {
-	"item_tango",
-	"item_tango",
-	"item_enchanted_mango",
-	"item_enchanted_mango",
-	"item_clarity",
-	"item_clarity",
+	"item_double_tango",
+	"item_double_enchanted_mango",
+	"item_double_clarity",
 	"item_branches",
 	"item_magic_stick",
 	"item_null_talisman",
-	"item_tranquil_boots",
 	"item_branches",
 	"item_recipe_magic_wand",
+	"item_tranquil_boots",
 	"item_cyclone",
 	"item_force_staff",
 	"item_veil_of_discord",
@@ -67,8 +64,7 @@ tOutFitList['outfit_mid'] = tOutFitList['outfit_carry']
 tOutFitList['outfit_priest'] = {
 	"item_flask",
 	"item_tango",
-	"item_clarity",
-	"item_clarity",
+	"item_double_clarity",
 	"item_branches",
 	"item_bracer",
 	"item_boots",
@@ -93,8 +89,7 @@ tOutFitList['outfit_priest'] = {
 tOutFitList['outfit_mage'] = {
 	"item_flask",
 	"item_tango",
-	"item_clarity",
-	"item_clarity",
+	"item_double_clarity",
 	"item_mantle",
 	"item_null_talisman",
 	"item_boots",
@@ -141,10 +136,6 @@ X['sSellList'] = {
 
 	"item_force_staff",
 	"item_magic_wand",
-
-	"item_aghanims_shard",
-	"item_magic_wand",
-	
 }
 
 if J.Role.IsPvNMode() or J.Role.IsAllShadow() then X['sBuyList'], X['sSellList'] = { 'PvN_mage' }, {} end

@@ -34,10 +34,8 @@ local nTalentBuildList = J.Skill.GetTalentBuild( tTalentTreeList )
 local tOutFitList = {}
 
 tOutFitList['outfit_carry'] = {
-	"item_tango",
-	"item_tango",
+	"item_double_tango",
 	"item_enchanted_mango",
-	"item_faerie_fire",
 	"item_faerie_fire",
 	"item_circlet",
 	"item_branches",
@@ -63,8 +61,7 @@ tOutFitList['outfit_carry'] = {
 tOutFitList['outfit_mid'] = tOutFitList['outfit_carry']
 
 tOutFitList['outfit_priest'] = {
-	"item_tango",
-	"item_tango",
+	"item_double_tango",
 	"item_faerie_fire",
 	"item_faerie_fire",
 	"item_clarity",
@@ -92,7 +89,7 @@ tOutFitList['outfit_tank'] = {
 	"item_tango",
 	"item_enchanted_mango",
 	"item_faerie_fire",
-	"item_branches",
+	"item_double_branches",
 	"item_branches",
 	"item_bracer",
 	"item_magic_stick",

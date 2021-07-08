@@ -41,7 +41,7 @@ tOutFitList['outfit_carry'] = {
 	"item_black_king_bar",
 	"item_abyssal_blade",
 	"item_travel_boots",
-	"item_greater_crit", 
+	"item_greater_crit",
 	"item_satanic",
 	"item_moon_shard",
 	"item_overwhelming_blink",
