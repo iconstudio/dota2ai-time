@@ -24,8 +24,8 @@ local tTalentTreeList = {
 }
 
 local tAllAbilityBuildList = {
-						{2,1,3,3,3,6,3,1,1,1,6,2,2,2,6},
-						{2,3,1,3,3,6,3,1,1,1,6,2,2,2,6},
+						{2,1,3,3,3,6,3,2,2,2,6,1,1,1,6},
+						{2,3,2,1,3,6,3,3,2,2,6,1,1,1,6},
 }
 
 local nAbilityBuildList = J.Skill.GetRandomBuild( tAllAbilityBuildList )
@@ -52,9 +52,9 @@ tOutFitList['outfit_carry'] = {
 	"item_assault",
 	"item_moon_shard",
 	"item_abyssal_blade",
-	"item_overwhelming_blink",	
+	"item_overwhelming_blink",
 	"item_travel_boots_2",
-	"item_ultimate_scepter_2",
+	"item_ultimate_scepter_2"
 }
 
 tOutFitList['outfit_mid'] = tOutFitList['outfit_carry']
@@ -78,10 +78,10 @@ tOutFitList['outfit_priest'] = {
 	"item_lotus_orb",
 	"item_shivas_guard",
 	"item_heavens_halberd",
-	"item_overwhelming_blink", 
+	"item_overwhelming_blink",
 	"item_travel_boots_2",
 	"item_moon_shard",
-	"item_ultimate_scepter_2",
+	"item_ultimate_scepter_2"
 }
 
 tOutFitList['outfit_mage'] = tOutFitList['outfit_priest']
@@ -106,9 +106,9 @@ tOutFitList['outfit_tank'] = {
 	"item_travel_boots",
 	"item_shivas_guard",
 	"item_travel_boots_2",
-	"item_overwhelming_blink", 
+	"item_overwhelming_blink",
 	"item_ultimate_scepter_2",
-	"item_moon_shard",
+	"item_moon_shard"
 }
 
 X['sBuyList'] = tOutFitList[sOutfitType]
@@ -124,8 +124,11 @@ X['sSellList'] = {
 	"item_bracer",
 
 	"item_black_king_bar",
-	"item_bracer",
+	"item_bracer"
 }
+
+
+if J.Role.IsPvNMode() or J.Role.IsAllShadow() then X['sBuyList'], X['sSellList'] = { 'PvN_tank' }, {"item_heavens_halberd", 'item_quelling_blade'} end
 
 nAbilityBuildList, nTalentBuildList, X['sBuyList'], X['sSellList'] = J.SetUserHeroInit( nAbilityBuildList, nTalentBuildList, X['sBuyList'], X['sSellList'] )
 
